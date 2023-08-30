@@ -1,0 +1,172 @@
+:root{
+    --branco-principal:#FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030C;
+    --font-principal: 'Inter';
+    --botao-azul-efeito:#71a9ec;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.principal{
+    background-image: url("/assests/Background.png"); /*colocar imagem no fundo*/
+    background-repeat: no-repeat;  /*para img não repetir*/
+    background-size: contain; /*para foto fica rno fundo*/
+    align-items: center; /*alinha os itens os box*/
+    text-align: center; /*alinha tudo que tem dentro do box*/
+}
+.container{
+    height: 100vh;
+    display: grid;/*para poder funcionar a parte debaixo*/
+    grid-template-columns: 50% 50%; /*Divide a tela em quantidades que eu colocar---- ex: 30%|30%|30%*/
+}
+.container__btn{
+    background-color: var(--botao-azul);
+    border-radius: 5px;
+    padding: 1em; /*medida relativa ao tamanho da fonte esse "EM"*/
+    text-decoration: none;
+    color: var(--branco-principal);
+    display: block; /*vai cair, e ocupar todo o espaço debaixo*/
+    margin-bottom: 1em;
+}
+.btn_secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+.container__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.container__aviso{
+    font-size: 0.75rem;
+    font-family: var(--font-principal);
+    color: var(--cinza-secundario);
+
+}
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+/*segunda parte*/
+.secundario__img{
+    width: 80%;
+}
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+.descricao__titulo{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+.descricao__txt{
+    color: var(--cinza-secundario);
+}
+/* terceira parte */
+.secundario__btn{
+    display: inline-block; /*para pegar so o espaço dele*/
+    margin-top: 1em;
+
+}
+.container__descricao{
+
+    padding: 2em;
+}
+/* Quarta parte fleBox */
+
+.dispositivos{
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-principal);
+}
+.dispositivos__titulo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--branco-principal);
+    
+    /* background-color: rebeccapurple; */
+
+}
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none; /*remover decoração de uma lista*/
+    gap: 4%;
+    margin: 5em 0;
+
+}
+.lista__item{
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+/* rodape */
+.rodape{
+    text-align: center;
+    margin: 0% 13% 0% 13%;
+}
+.rodape__logo{
+    margin: 0% 0% 2% 0%;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+}
+.lista__link{
+    font-family: var(--font-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+.rodape__txt{
+    margin: 2% 0% 2% 0%;
+}
+.final{
+    margin: 2% 0% 8% 0%;
+}
+
+.lista__link:hover{ /*quando passar por cima*/
+    color: var(--botao-azul);
+}
+.lista__link:active{/*quando ficar pressionando*/
+    color: purple;
+}
+
+.container__btn:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-fundo);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
